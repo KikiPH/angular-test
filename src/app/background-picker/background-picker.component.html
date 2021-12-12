@@ -1,0 +1,16 @@
+<div id="background-picker" class='block'>
+    <label for="colors">Choose background color: </label>
+
+    <select name="colors" #colorSelect (change)="setBackground(colorSelect.value)">
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="cyan">Cyan</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+    </select>
+    
+    <p>Current color: {{color}}</p>
+</div>
