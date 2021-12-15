@@ -1,6 +1,12 @@
 <div class="app">
-	<div class="title">
-		<h1>ANGULAR TEST</h1>
+	<div>
+		<div class="title">
+			<h1 [ngClass]="{'rainbowText': this.rainbowTitle}">ANGULAR TEST</h1>
+		</div>
+		<div [ngStyle]="{'text-align': 'center'}">
+			<input id="titleCheckbox" type="checkbox" (change)="toggleRainbowTitle()">
+			<label for="titleCheckbox"> Toggle rainbow title</label>
+		</div>
 	</div>
 
 	<div class="body">

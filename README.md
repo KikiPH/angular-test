@@ -1,11 +1,10 @@
-## Development server
+Za inštalacijo vseh potrebnih modulov `npm install`.
+Vsi moduli so zapisani v datoteki package.json.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Za avtomatsko generiranje nove komponente `ng generate component #component-name#` ali `ng g component #component-name#`.
+Ustvari direktorij z imenom komponente in 4 datoteke: logični del (.ts), izgled (.html), stili (.less) in testi (.spec)*.
+*testov ne uporabljamo, zato se to datoteko lahko izbriše
+Doda referenco na novo komponento v app.module.ts.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+V terminalu `ng serve` zažene aplikacijo.
+Aplikacija dela na url naslovu http://localhost:4200/

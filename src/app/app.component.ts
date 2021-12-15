@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.less']
 })
 export class AppComponent {
+	rainbowTitle = false;
 	defaultBackground = 'white';
 	showProducts = false;
 	products = [
@@ -28,7 +29,7 @@ export class AppComponent {
 			name: 'Pineapple',
 			description: 'yellow-brown'
 		}
-	]
+	];
 
 	toggleProducts() {
 		this.showProducts = !this.showProducts;
@@ -45,5 +46,9 @@ export class AppComponent {
 	removeProduct(i: number) {
 		console.log('Removed id:', i);
 		this.products.splice(i, 1);
+	}
+
+	toggleRainbowTitle() {
+		this.rainbowTitle = !this.rainbowTitle;
 	}
 }
