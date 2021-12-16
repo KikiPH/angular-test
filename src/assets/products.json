@@ -1,0 +1,23 @@
+{
+    "products": [
+		{
+			"name": "Apple",
+			"description": "red"
+		},
+		{
+			"name": "Banana",
+			"description": "yellow"
+		},
+		{
+			"name": "Mango"
+		},
+		{
+			"name": "Orange",
+			"description": "orange"
+		},
+		{
+			"name": "Pineapple",
+			"description": "yellow-brown"
+		}
+	]
+}

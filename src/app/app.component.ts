@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import productsData from '../assets/products.json';
 
 @Component({
 	selector: 'app-root',
@@ -9,27 +10,7 @@ export class AppComponent {
 	rainbowTitle = false;
 	defaultBackground = 'white';
 	showProducts = false;
-	products = [
-		{
-			name: 'Apple',
-			description: 'red'
-		},
-		{
-			name: 'Banana',
-			description: 'yellow'
-		},
-		{
-			name: 'Mango'
-		},
-		{
-			name: 'Orange',
-			description: 'orange'
-		},
-		{
-			name: 'Pineapple',
-			description: 'yellow-brown'
-		}
-	];
+	products = productsData.products;
 
 	toggleProducts() {
 		this.showProducts = !this.showProducts;

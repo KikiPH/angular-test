@@ -1,4 +1,5 @@
-import { Component, Directive, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import colorsData from '../../assets/colors.json';
 
 @Component({
 	selector: '[color]',
@@ -7,40 +8,7 @@ import { Component, Directive, Input } from '@angular/core';
 })
 export class BackgroundPickerComponent {
 	@Input() color: string;
-	colors = [
-		{
-			title: "White",
-			value: "white"
-		},
-		{
-			title: "Red",
-			value: "red"
-		},
-		{
-			title: "Orange",
-			value: "orange"
-		},
-		{
-			title: "Yellow",
-			value: "yellow"
-		},
-		{
-			title: "Green",
-			value: "green"
-		},
-		{
-			title: "Cyan",
-			value: "cyan"
-		},
-		{
-			title: "Blue",
-			value: "blue"
-		},
-		{
-			title: "Purple",
-			value: "purple"
-		},
-	];
+	colors = colorsData.colors;
 
 	setBackground(color: string) {
 		this.color = color;
