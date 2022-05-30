@@ -2,7 +2,7 @@
     <label for="colors">Choose background color: </label>
 
     <select name="colors" #colorSelect (change)="setBackground(colorSelect.value)">
-        <option *ngFor="let color of colors" [value]="color.value">{{color.title}}</option>
+        <option *ngFor="let color of colors" [value]="color.value" [style.background-color]="color.value">{{color.title}}</option>
     </select>
     
     <p>Current color: {{color}}</p>
