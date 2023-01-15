@@ -1,0 +1,15 @@
+<div id="acronis" class="block">
+    <div class="product-container">
+        <div class="product" *ngFor="let package of packages; index as i" (click)="selectPackage(i)">
+            <h3 class="title">
+                {{package.name}}
+            </h3>
+            <p>
+                {{package.description}}
+            </p>
+            <p *ngFor="let option of package.options | keyvalue">
+                - {{option.key}}: {{option.value}}
+            </p>
+        </div>
+    </div>
+</div>

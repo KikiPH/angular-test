@@ -3,17 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BackgroundPickerComponent } from './background-picker/background-picker.component';
+import { AcronisComponent } from './acronis/acronis';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BackgroundPickerComponent
+    BackgroundPickerComponent,
+    AcronisComponent
   ],
   imports: [
     BrowserModule
   ],
   exports: [
-    BackgroundPickerComponent
+    BackgroundPickerComponent,
+    AcronisComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

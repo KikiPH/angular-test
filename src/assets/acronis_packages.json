@@ -1,0 +1,43 @@
+{
+    "packages": [
+		{
+			"name": "Basic",
+			"description": "Test package with limited features. Active for 14 days after registration.",
+            "options": {
+                "feature_1": true,
+                "feature_2": true,
+                "feature_3": false,
+                "feature_4": false,
+                "extra": false,
+                "duration": 14,
+                "price": 0
+            }
+		},
+		{
+			"name": "Standard",
+			"description": "Standard package with full features. Monthly payment with full customer support.",
+            "options": {
+                "feature_1": true,
+                "feature_2": true,
+                "feature_3": true,
+                "feature_4": true,
+                "extra": false,
+                "duration": 30,
+                "price": 50
+            }
+		},
+		{
+			"name": "Professional",
+			"description": "Professional package with full features. Yearly payment with full customer support and weekly preformance analysis.",
+            "options": {
+                "feature_1": true,
+                "feature_2": true,
+                "feature_3": true,
+                "feature_4": true,
+                "extra": true,
+                "duration": 365,
+                "price": 500
+            }
+		}
+	]
+}
